@@ -13,8 +13,8 @@ export const App = () => {
     const { name } = event.currentTarget;
 
     if (name === 'good') setGood(prevState => prevState + 1);
-    else if (name === 'neutral') setNeutral(prevState => prevState + 1);
-    else if (name === 'bad') setBad(prevState => prevState + 1);
+    if (name === 'neutral') setNeutral(prevState => prevState + 1);
+    if (name === 'bad') setBad(prevState => prevState + 1);
   };
 
   const countTotalFeedback = () => {
